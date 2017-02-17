@@ -1,0 +1,273 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-04 18:35:07
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-08 18:35:40
+*/
+body{
+    background: #f6f6f6;
+}
+
+
+.banner{
+    height: auto;
+    margin-top: 10px;
+}
+
+/*轮播图*/
+.pics_wrap{
+	width: 100%;
+	height: auto;
+	float:left;
+}
+#html5zoo-1{
+	display: block; 
+	position: relative; 
+	width: 100%; 
+	height: 460px;
+	margin: 0 auto;
+}
+.html5zoo-wrapper-0 {
+	display: block;
+	position: relative;
+	width: 100%;
+	min-width: 1000px;
+	height: auto;
+	overflow: hidden;
+}
+
+.html5zoo-slider-0 {
+	display: block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.html5zoo-box-0 {
+	display: block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.html5zoo-swipe-box-0 {
+	display: block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.html5zoo-space-0 {
+	display: block;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+	visibility: hidden;
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.html5zoo-img-box-0 {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.html5zoo-play-0 {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	cursor: pointer;
+	width: 64px;
+	height: 64px;
+	margin-top: -32px;
+	margin-left: -32px;
+	background: url('http://www.w2bc.com/demo/2014-12-29-jquery-focus/js/../images/playvideo-64-64-0.png') no-repeat left top;
+}
+
+.html5zoo-video-wrapper-0 {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #000;
+	text-align: center;
+}
+
+.html5zoo-error-0 {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	top: 50%;
+	color: #fff;
+	font: 16px Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.html5zoo-video-wrapper-0 video {
+	max-width: 100%;
+	height: auto;
+}
+
+.html5zoo-video-wrapper-0 iframe,
+.html5zoo-video-wrapper-0 object,
+.html5zoo-video-wrapper-0 embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.html5zoo-text-0 {
+	display: block;
+	padding: 12px;
+	text-align: left;
+}
+
+.html5zoo-text-bg-0 {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #333333;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+.html5zoo-title-0 {
+	display: block;
+	position: relative;
+	font: 16px Inder, Arial, Tahoma, Helvetica, sans-serif;
+	color: #fff;
+}
+.html5zoo-description-0 {
+	display: block;
+	position: relative;
+	margin-top: 4px;
+	font: 14px Inder, Arial, Tahoma, Helvetica, sans-serif;
+	color: #fff;
+}
+
+/*轮播图*/
+/*.slider{
+    width: 100%;
+    min-width: 1000px;
+    height: 350px;
+    float:left;
+    position: relative;
+}
+.slider .sliderImg{
+    width: 100%;
+    min-width: 1000px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .sliderImg li{
+    width: 100%;
+    min-width: 1000px;
+    height: 350px;
+    position: absolute;
+}
+.slider .sliderImg img{
+    width: 100% ;
+    height: 100%;
+}
+
+.circle{
+    position: absolute;
+    bottom: 8px;
+    left:50%;
+    z-index: 10;
+}
+.circle span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/gift/cir.png);
+    margin: 3px 10px;
+    cursor: pointer;
+}*/
+
+/*content*/
+.content .title{
+    padding: 20px 0;
+}
+.content .title img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 2px;
+    margin-left: 6px;
+}
+.content .title h2{
+    color: #1e1e1e;
+    font-size: 24px;
+    font-family: "华文细黑";
+}
+.goods{
+    width: 230px;
+    height: 330px;
+    background: #fff;
+    display:inline-block;
+    margin:0 8px 20px;
+    overflow: hidden;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.goods:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+	-webkit-transform: translate3d(0,-2px,0);
+	transform: translate3d(0,-2px,0);
+}
+.goods .img{
+    width: 230px;
+    height: 230px;
+}
+.goods .img img{
+    width: 230px;
+    height: 230px;
+}
+.goods .goods_name{
+    padding-left: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 12px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.goods .goods_price{
+    padding-left: 10px;
+    font-size: 18px;
+    color: red;
+    float: left;
+    margin-top: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*懒加载*/
+.goods .img img{
+    width: 230px;
+    height: 230px;
+    background: url(../img/gift/2013092022533423.gif) 50% no-repeat;
+}

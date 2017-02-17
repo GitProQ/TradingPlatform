@@ -1,0 +1,154 @@
+.main{
+	padding-top: 20px;
+}
+.main h3{
+	font-weight: 100;
+	font-family: "华文行楷";
+	color:#FF031A;
+}
+.input{
+	margin-top: 20px;
+	height: 250px;
+	position: relative;
+}
+.input .textArea{
+	resize: none;
+	width: 780px;
+	height: 100px;
+	padding: 10px;
+	margin: 0 auto;
+	border:1px solid #48A0FD;
+	outline: none;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    behavior: url(PIE-1.0.0/PIE.htc);
+    font: 16px "楷体";
+    display: block;
+    background: url(../img/guestbook/cy-logo.png) no-repeat center;
+}
+
+.input .send{
+	width: 102px;
+	height: 30px;
+	background: url(../img/guestbook/post-btn.png);
+	border: 0;
+	float: right;
+	margin: 10px 100px 0 0;
+	cursor: pointer;
+	outline: none;
+}
+.input i{
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: url(../img/guestbook/face-ico.png);
+	margin: 10px 0 0 120px;
+	cursor: pointer;
+}
+.input i:hover{
+	background: url(../img/guestbook/face-ico-hover.png);
+}
+.input .face ul{
+	height: 35px;
+	margin-left: 1px;
+}
+.input .face{
+	width: 290px;
+	height: 115px;
+	background: url(../img/guestbook/face-bg.png);
+	position: absolute;
+	left:110px;
+	top:155px;
+	display: none;
+}
+.input .face ul li{
+	width: 21px;
+    height: 21px;
+    float: left;
+    padding: 7px;
+    cursor: pointer;
+}
+.input .face ul li img{
+	width: 20px;
+	height: 20px;
+}
+.faceOne{
+	margin-top: 6px;
+}
+.faceOne li{
+	border-right:1px dashed #ccc;
+	border-bottom:1px dashed #ccc;
+}
+.faceTwo li{
+	border-right:1px dashed #ccc;
+	border-bottom:1px dashed #ccc;
+}
+.faceThr li{
+	border-right:1px dashed #ccc;
+}	
+
+.con{
+	border: 1px solid #ccc;
+	width: 780px;
+	margin: 0 auto;
+	padding: 10px;
+	border:1px solid orange;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    behavior: url(PIE-1.0.0/PIE.htc);
+    font: 16px "楷体";
+	margin-bottom: 500px;
+}
+.con li{
+	margin-top: 10px;
+	padding: 10px 0 0 0;
+	border-top: 1px dashed #ccc;
+	position: relative;
+}
+.con .username{
+	color:#00BFFF;
+}
+.con .del{
+	color:#FF031A;
+	float:right;
+	cursor: pointer;
+}
+.con .time{
+	float:right;
+}
+.con s,.con i,.con b{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+}
+.con i{
+	background: url(../img/guestbook/b07.png) no-repeat;
+	margin-left: 600px;
+}
+.con i:hover{
+	background: url(../img/guestbook/b05.png) no-repeat;
+}
+.con s{
+	background: url(../img/guestbook/b08.png) no-repeat;
+	margin-left: 20px;
+	margin-top: -8px;
+}
+.con s:hover{
+	background: url(../img/guestbook/b06.png) no-repeat;
+}
+.con b{
+	background: url(../img/guestbook/prop-ico.png) ;
+	margin-left: 18px;
+}
+.con ul li>img{
+	z-index: -1;
+}
+.con ul li p img{
+	display: inline-block;
+}

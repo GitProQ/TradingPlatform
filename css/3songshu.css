@@ -1,0 +1,22 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-08 18:19:36
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-08 20:42:48
+*/
+/* 
+* @Author: Marte
+* @Date:   2016-10-08 11:56:48
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-08 17:26:26
+*/
+/*内容*/
+.content{
+    height: 8500px;
+}
+
+/*懒加载*/
+.demo img { 
+    width: 790px;
+    background: url(../img/loading.gif) 50% no-repeat;
+}

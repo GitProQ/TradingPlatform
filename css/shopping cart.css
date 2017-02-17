@@ -1,0 +1,187 @@
+/* 
+* @Author: Marte
+* @Date:   2016-10-09 21:16:10
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-09 22:37:38
+*/
+html,body{
+    height: 100%;
+}
+.main{
+    margin-top: 20px;
+    min-height: 100%;
+}
+.main h3{
+    font-weight: 100;
+}
+.tips{
+    margin-top: 10px;
+    height: 50px;
+    background: #f5f5f5;
+    line-height: 50px;
+}
+#all{
+    margin-left: 30px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.tips .qx{
+    padding-right: 300px;
+}
+.tips .num{
+    font-size: 14px;
+    color: #a3a3a3;
+}
+.tips .sum{
+    font-size: 22px;
+    color: #1e1e1e;
+    font-weight: 400;
+    vertical-align: top;
+}
+.tips .pay{
+    float: right;
+    background-color: #52B0FF;
+    border: 1px solid #52B0FF;
+    color: #fff;
+    width: 180px;
+    height: 49px;
+    line-height: 48px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 200;
+    cursor: pointer;
+}
+.tips .pay:hover{
+    background-color: #48A0FD;
+    border: 1px solid #48A0FD;
+}
+
+table tr{
+    width: 998px;
+    display: table;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+table th{
+    height: 70px;
+    line-height: 70px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 200;
+}
+table td{
+	text-align: center;
+	height: 100px;
+}
+table .product{
+    width: 500px;
+    padding: 0 0 0 80px;
+    text-align: left; 
+}
+table .price{
+    width: 180px;
+}
+table .amount{
+    width: 250px;
+}
+table .total{
+    width: 180px;
+}
+table .operate{
+    width: 200px;
+}
+table tr td .check{
+	float:left;
+	width: 15px;
+	height: 15px;
+	margin: 35px 20px;
+}
+table tr td img{
+    width: 80px;
+    height: 80px;
+    float:left;
+}
+
+
+.add,.reduce{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fafafa;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.reduce{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    left: 0;
+}
+tr .num{
+    width: 40px;
+    height: 31px;
+    vertical-align: middle;
+    line-height: 31px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.add{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+tr button{
+	color: #a3a3a3;
+    font-size: 14px;
+    min-width: 80px;
+    padding: 7px 14px;
+    border-radius: 2px;
+    border: 1px solid #f5f5f5;
+    background-color: #fcfcfc;
+    cursor: pointer;
+}
+tr button:hover{
+	background-color: gold;
+}
+tr .info{
+	width: 390px;
+	line-height: 45px;
+}
+tr .info a{
+	color: #3f3f3f;
+    margin: 20px 0 10px 0 ;
+    font-size: 14px;
+    text-decoration: ninfo;
+}
+tr .info a:hover{
+	color:#ff0321;
+}
+tr .info p{
+	color: #7b7b7b;
+    font-size: 14px;
+}
+tr .jiage{
+	width: 132px;
+}
+tr .shuliang{
+	width: 168px;
+}
+tr .xiaoji{
+	width: 132px;
+}
+tr .price{
+	width: 140px;
+}
+tr .number{
+	width: 170px;
+}
+tr .subtotal{
+	width: 130px;
+}

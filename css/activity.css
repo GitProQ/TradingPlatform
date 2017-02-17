@@ -1,0 +1,138 @@
+body{
+    background: #f6f6f6;
+    min-width: 420px;
+}
+a{
+	text-decoration: none !important;
+}
+
+.navbar{
+	min-height: 40px;
+	background: #27292b;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-nav li a {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+}
+.navbar-nav>.geren a{
+	padding: 0 10px 0 0;
+}
+.navbar-nav>.geren s{
+	margin-right: 5px;
+}
+.navbar-nav>.spcar a{
+	margin-top: 5px;
+}
+.nav li a:hover,.nav li a:focus {
+    background-color: #27292b;
+    color: #52B0FF;
+}
+.nav #cartNum{
+	left: 20px;
+}
+.nav .logoff{
+	position: absolute;
+}
+.navbar-toggle{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-color: #fff;
+	color: white;
+}
+/*logo*/
+.logo>.container>a{
+    margin-top: 20px;
+    display:inline-block;
+    width: 285px;
+    height: 50px;
+    background:url(../img/logo.png);
+}
+.logo .container form{
+	padding-top: 20px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.logo .container form p{
+	color: #666;
+	font-size: 14px;
+	padding-left: 50px;
+}
+.logo .container input[type=text]{
+    width: 60%;
+    height: 36px;
+    border:2px solid #48A0FD;;
+    margin-left: 50px;
+    vertical-align: bottom;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.logo .container input[type=submit]{
+    width: 80px;
+    height: 36px;
+    padding-left: 30px;
+    background:url(../img/index/search.png) no-repeat 5px;
+    background-color: #52B0FF;
+    border:2px solid #48A0FD;
+    color:#ccc;
+    font-size: 16px;
+    margin-left: -5px;
+    cursor:pointer;
+}
+.logo .container input[type=submit]:hover{
+    background:url(../img/index/search_hover.png) no-repeat 5px;
+    background-color: #52B0FF;
+    color:#ff0321;
+}
+
+/*main*/
+.main{
+	padding: 30px 0;
+}
+.main h4{
+	margin-bottom: 20px;
+}
+.main h4 span{
+	vertical-align: middle;
+}
+.main h4 .star{
+	display: inline-block;
+	width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat -22px -1px;
+    background-color: black;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.main .items p{
+	line-height: 30px;
+	padding-left: 20px;
+	background: #e5e5e5;
+	color: red;
+	font-size: 18px;
+}
+
+.fix a{
+	width: 40px;
+}
+
+/*footer*/
+.footer{
+	min-width: 0;
+    background: #120A0A;
+}
+.footer .container div{
+    float:left;
+    text-align: center;
+    color:white;
+}
+.botList ul li{
+	line-height: 75px;
+	float: left;
+	text-align: center;
+	padding: 0 4%;
+}

@@ -1,0 +1,84 @@
+/*主体*/
+.main{
+	min-height: 600px;
+}
+.main .title{
+	padding-top: 30px;
+}
+.main .title ul{
+	float:right;
+}
+.main .title ul li,.main h3{
+	float:left;
+}
+.main h3{
+	line-height: 36px;
+}
+
+table{
+	border-collapse: collapse;
+}
+table tr{
+    width: 998px;
+    display: table;
+    border-bottom: 1px solid #f5f5f5;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+.timeTip{
+	height: 25px;
+	line-height: 25px;
+	background: #f5f5f5;
+}
+table th{
+    height: 40px;
+    line-height: 40px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 200;
+    background: #f5f5f5;
+}
+table td{
+	text-align: center;
+	height: 100px;
+}
+table .product{
+    width: 500px;
+    padding: 0 0 0 80px;
+    text-align: left; 
+}
+table .info{
+	padding-left: 20px;
+	width:465px;
+	line-height: 30px;
+}
+table .info p{
+	font-size: 14px;
+	color: #666;
+}
+table .amount{
+    width: 170px;
+}
+table .number{
+	width: 143px;
+}
+table .total{
+    width: 250px;
+}
+table .subtotal{
+	width: 200px;
+}
+table .operate{
+    width: 180px;
+}
+table tr td .check{
+	float:left;
+	width: 15px;
+	height: 15px;
+	margin: 35px 20px;
+}
+table tr td img{
+    width: 80px;
+    height: 80px;
+    float:left;
+}

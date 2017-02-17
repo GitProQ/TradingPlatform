@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>校园物品交易平台—登录</title>
+        <link href="lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+	    <script src="lib/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+	    <script src="lib/Respond-1.4.2/src/respond.js"></script>
+	    <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <body class="demo-1">
+        <!-- main start -->
+        <div class="main row clearfix ">
+            <!-- main-left -->
+            <div class="main-l col-md-7 hidden-sm hidden-xs">
+                <div class="banMain">
+                    <a href="index.html" target="_blank"><img src="img/login/bg1.png" /></a>
+                </div>
+                <div class="weather">
+                	<p class="time">2016年12月5日</p>
+                	<p class="city">广州</p>
+                	<p class="temp">8℃~20℃</p>
+                	<p class="wea">雨</p>
+                </div>
+            </div>
+            <!-- main-right -->
+            <div class="main-r col-xs-12 col-sm-12 col-md-5">
+                <div class="loginInfo">
+                    <a href="index.html"></a>
+                    <form action="">
+                        <!-- 用户名 -->
+                        <div class="userName">
+                            <label for="user"></label>
+                            <input type="text" id="user" value="学号/手机号" />
+                        </div>
+                        <span><i></i>请输入正确格式的用户名!</span>
+                            
+                        <!-- 密码 -->
+                        <div class="passWord">
+                            <label for="pw"></label>
+                            <input type="text" id="txt" value="密码"/>
+                            <input type="password" id="pw" value=""/>
+                        </div>
+                        <span><i></i>请输入正确的密码!</span>
+                        <p><a href="">忘记密码？</a></p>
+                        <input type="button" class="login" value="登录" />
+                        <p><a href="register.html">立即注册<i></i></a><s>还没有平台帐号？</s></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- main end -->
+        <!--bg start-->
+        <div class="container bg">
+			<div class="slideshow">
+				<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+				<!-- Heavy Rain -->
+				<div class="slide" id="slide-1" data-weather="rain">
+					<div class="slide__element slide__element--date">Sunday, 24<sup>th</sup> of October 2043</div>
+					<div class="slide__element slide__element--temp">12°<small>C</small></div>
+				</div>
+				<!-- Drizzle -->
+				<div class="slide" id="slide-2" data-weather="drizzle">
+					<div class="slide__element slide__element--date">Saturday, 25<sup>th</sup> of October 2043</div>
+					<div class="slide__element slide__element--temp">18°<small>C</small></div>
+				</div>
+				<!-- Sunny -->
+				<div class="slide" id="slide-3" data-weather="sunny">
+					<div class="slide__element slide__element--date">Monday, 26<sup>th</sup> of October 2043</div>
+					<div class="slide__element slide__element--temp">25°<small>C</small></div>
+				</div>
+				<!-- Heavy rain -->
+				<div class="slide" id="slide-5" data-weather="storm">
+					<div class="slide__element slide__element--date">Wednesday, 28<sup>th</sup> of October 2043</div>
+					<div class="slide__element slide__element--temp">20°<small>C</small></div>
+				</div>
+				<!-- Fallout (greenish overlay with slightly greenish/yellowish drops) -->
+				<div class="slide" id="slide-4" data-weather="fallout">
+					<div class="slide__element slide__element--date">Tuesday, 27<sup>th</sup> of October 2043</div>
+					<div class="slide__element slide__element--temp">34°<small>C</small></div>
+				</div>
+				<nav class="slideshow__nav">
+					<a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i><span>10/24</span></a>
+					<a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i><span>10/25</span></a>
+					<a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i><span>10/26</span></a>
+					<a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i><span>10/28</span></a>
+					<a class="nav-item" href="#slide-4"><i class="icon icon--radioactive"></i><span>10/27</span></a>
+				</nav>
+			</div>
+		</div>
+		<!-- /container -->
+        <div class="image-preload">
+			<img src="img/weather/drop-color.png" alt="">
+			<img src="img/weather/drop-alpha.png" alt="">
+			<img src="img/weather/weather/texture-rain-fg.png" />
+			<img src="img/weather/weather/texture-rain-bg.png" />
+			<img src="img/weather/weather/texture-sun-fg.png" />
+			<img src="img/weather/weather/texture-sun-bg.png" />
+			<img src="img/weather/weather/texture-fallout-fg.png" />
+			<img src="img/weather/weather/texture-fallout-bg.png" />
+			<img src="img/weather/weather/texture-drizzle-fg.png" />
+			<img src="img/weather/weather/texture-drizzle-bg.png" />
+		</div>
+		
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/placeholder.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+        <script id="rain" type="text/javascript" src="js/rain.min.js"></script>
+        <script id="ip" type="text/javascript" src="http://www.coding123.net/getip.ashx?js=1"></script>
+    </body>
+</html>

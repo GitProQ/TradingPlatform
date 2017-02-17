@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>校园物品交易平台—搜索</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/search.css" />
+        <link rel="shortcut icon"  href="favicon.ico" />
+	</head>
+	<body ng-app="searchApp" ng-controller="searchCtrl">
+		<!-- person start -->
+        <div class="person">
+            <div class="banxin">
+                <ul>
+                    <li class="login"><a href="login.html">您好，请登录！</a></li>
+                    <li><a href="register.html">免费注册</a></li>
+                    <li><a href="order.html">我的订单</a></li>
+                    <li class="geren"><s></s><a class="userName" href="personal.html">个人中心</a><div class="logoff"><a href="javascript:;">注销</a></div></li>
+                    <li class="spcar"><a href="shopping cart.html"></a><span id="cartNum">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- logo start -->
+        <div class="logo">
+            <div class="banxin">
+                <a href="index.html"></a>
+                <form action="search.html">
+                	<input type="text" />
+                	<input class="search" type="submit" value="搜索"/>
+                </form>
+            </div>
+        </div>
+        <!-- content start -->
+        <div class="content">
+            <div class="banxin">
+            	<h4>搜索结果：<span class="result"></span></h4>
+            	<div class="showTip">
+            		抱歉，没有找到您要搜索的内容
+            	</div>
+                <div class="goods" ng-repeat="item in data" ng-init="load()">
+                    <div class="img">
+                        <a href="{{item.href}}"><img class="lazy" src="img/blank.gif" data-echo="{{item.img}}" /></a>
+                    </div>
+                    <div class="inf">
+                        <p class="goods_name" title="{{item.info}}" ng-bind="item.info"></p>
+                        <p class="goods_price">￥<span class="num" ng-bind="item.price"></span></p>
+                    </div>
+                </div>
+            </div>    
+        </div> 
+        <!-- footer start -->
+        <div class="footer">
+            <div class="banxin clearfix">
+                <div class="botList">
+                    <ul>
+                    	<li class="webchat"><i></i>快捷支付</li>
+                    	<li class="guide"><i></i>购买指引</li>
+                    	<li class="services"><i></i>优质服务</li>
+                    	<li class="distribution"><i></i>快速配送</li>
+                    	<li class="about"><i></i>关于我们</li>
+                    </ul>
+                </div>
+                <p>Copyright ©2016 Campus goods trading platform. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- back top -->
+        <div class="fix">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=804093032&site=qq&menu=yes">
+            <i class="qq" alt="点击这里给我发消息" title="点击这里给我发消息"></i>
+           	在<br />线<br />客<br />服
+            </a>
+            <div class="bTop"></div>
+        </div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+	</body>
+</html>

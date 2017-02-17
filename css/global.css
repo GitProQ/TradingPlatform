@@ -1,0 +1,437 @@
+/* 
+* @Author: Marte
+* @Date:   2016-09-26 08:49:09
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-09 19:43:29
+*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,a{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+}
+ul, ol {
+    list-style: none;               /*清除列表风格*/
+}
+img{
+    border:0;
+}
+i,s,b,em,strong{
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+}
+.clearfix::before,.clearfix::after {
+    content:"";
+    height: 0;
+    line-height: 0;
+    display:block;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix{
+    zoom:1;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+	font-family:DFGirl;
+	src: url("../font/华康少女字体.ttf");
+}
+
+/*版心*/
+.banxin{
+    width: 1000px;
+    margin:0 auto;
+}
+
+/*person导航*/
+.person{
+    width: 100%;
+    min-width: 1000px;
+    height: 40px;
+    background: #27292b;
+}
+.person ul{
+    float:right;
+}
+.person ul li{
+    float: left;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.person ul li a{
+    color:white;
+}
+.person ul li a:hover{
+    color:#52B0FF;
+}
+ul li s{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/sprite.png) -1px 378px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+.geren{
+	width: 160px;
+	padding: 0 !important;
+	text-align: center;
+}
+.logoff{
+	color:white;
+	width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #27292b;
+    display: none;
+}
+.spcar a{
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    background: url(../img/sprite.png) 167px 378px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.spcar{
+    position: relative;
+}
+#cartNum{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 12px;
+    top: 2px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    behavior: url(PIE-1.0.0/PIE.htc);
+    background-color: orange;
+}
+
+/*logo*/
+.logo>.banxin>a{
+    margin-top: 20px;
+    display:inline-block;
+    width: 285px;
+    height: 50px;
+    background:url(../img/logo.png);
+}
+.logo .banxin form{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.logo .banxin form p{
+	color: #666;
+	font-size: 14px;
+	padding-left: 50px;
+}
+.logo .banxin input[type=text]{
+    width: 350px;
+    height: 30px;
+    border:2px solid #48A0FD;;
+    margin-left: 50px;
+    vertical-align: bottom;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.logo .banxin input[type=submit]{
+    width: 80px;
+    height: 36px;
+    padding-left: 30px;
+    background:url(../img/index/search.png) no-repeat 5px;
+    background-color: #52B0FF;
+    border:2px solid #48A0FD;
+    color:#ccc;
+    font-size: 16px;
+    margin-left: -5px;
+    cursor:pointer;
+}
+.logo .banxin input[type=submit]:hover{
+    background:url(../img/index/search_hover.png) no-repeat 5px;
+    background-color: #52B0FF;
+    color:#ff0321;
+}
+
+/*返回顶部*/
+.fix{
+    width: 42px;
+    height: 156px;
+    position: fixed;
+    right:20px;
+    top:450px;
+    z-index: 100;
+}
+.fix a{
+    display:inline-block;
+    position: relative;
+    width: 18px;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    line-height: 1.2;
+    color: #ababab;
+    font-size: 13px;
+    font-weight: 100;
+    text-align: center;
+    background: #fafafa;
+}
+.fix .qq{
+    display:block;
+    width: 19px;
+    height: 22px;
+    background: url("../img/sprite.png") 71px 28px;
+    margin-bottom: 10px;
+}
+.bTop{
+    width: 40px;
+    height: 40px;
+    background: url(../img/sprite.png) -1px 255px;
+    display:none;
+    cursor: pointer;
+}
+.bTop:hover{
+    background: url(../img/sprite.png) 0px 131px;
+}
+
+
+/*商品通用*/
+.banner{
+    margin-top: 20px;
+    height: 680px;
+}
+.banner .banxin{
+    height: 680px;
+}
+.banner .img{
+    width: 550px;
+    height: 650px;
+    margin-top: 10px;
+    float:left;
+}
+.banner .img .bigImg{
+    height: 520px;
+}
+.banner .bigImg img{
+    width: 500px;
+    position: absolute;
+}
+.banner .img ul li{
+    float:left;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.banner .img ul li img{
+    width: 110px;
+}
+.banner .info{
+    float:left;
+    position: relative;
+    width: 400px;
+    height: 650px;
+}
+.banner .info del{
+    font-size: 14px;
+    color: #888;
+}
+.banner .info h2{
+    font-size: 28px;
+    color: #3f3f3f;
+    font-weight: 100;
+}
+.banner .info p{
+    margin: 15px 0;
+    color: #7b7b7b;
+    line-height: 20px;
+}
+.banner .info span{
+    margin-right: 10px;
+    color: #222;
+    font-size: 24px;
+    font-weight: 400;
+    color:#ff0321;
+}
+.banner .info ul{
+    height: 100px;
+}
+.banner .info ul li{
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #7b7b7b;
+    font-weight: 400;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.banner .info ul .select{
+    border: 1px solid #52B0FF;
+}
+
+.banner .info .reduce,.banner .info .add{
+    position: absolute;
+    display: block;
+    width: 41px;
+    height: 42px;
+    top: 330px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.banner .info .reduce{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    left: 0;
+}
+.banner .info .num{
+    position: absolute;
+    width: 55px;
+    height: 38px;
+    line-height: 38px;
+    top: 330px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fafafa;
+    cursor: pointer;
+    left:42px;
+}
+.banner .info .add{
+    left: 100px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.banner .info .remain{
+    position: relative;
+    font-size: 12px;
+    color: #a3a3a3;
+    left:150px;
+    line-height: 42px;
+}
+.addCar,.buy{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 400px;
+    line-height: 50px;
+}
+.banner .info .addCar{
+    border: 1px solid #35c367;
+    background-color: #35c367;
+    left:0;
+}
+.banner .info .buy{
+    border: 1px solid tomato;
+    background-color: tomato;
+    left:200px;
+}
+.banner .info .addCar:hover{
+    background-color: #76D145;
+}
+.banner .info .buy:hover{
+    background-color: #FF735A;
+}
+.content .contentImg ul{
+    height: 30px;
+    position: absolute;
+    left: 0;
+}
+.content .contentImg ul li{
+    float:left;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+}
+.content img{
+    display: block;
+}
+.contentImg{
+    position: relative;
+    height: 40px;
+}
+
+/*footer*/
+.footer{
+	min-width: 1000px;
+    background: #120A0A;
+}
+.footer .banxin div{
+    height: 100px;
+    float:left;
+    text-align: center;
+    color:white;
+}
+.footer .banxin .botList ul li{
+	line-height: 50px;
+	float: left;
+	line-height: 100px;
+	width: 200px;
+	text-align: center;
+}
+.botList ul li i{
+	display: inline-block;
+	width: 28px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.botList ul .webchat i{
+	background: url(../img/footer_help_sprites.png) no-repeat 0 -1px;
+}
+.botList ul .guide i{
+	background: url(../img/footer_help_sprites.png) no-repeat 0 -20px;
+}
+.botList ul .services i{
+	background: url(../img/footer_help_sprites.png) no-repeat 0 -40px;
+}
+.botList ul .distribution i{
+	background: url(../img/footer_help_sprites.png) no-repeat 0 -60px;
+}
+.botList ul .about i{
+	background: url(../img/footer_help_sprites.png) no-repeat 0 -80px;
+}
+.footer p{
+	text-align: center;
+	color: #e5e5e5;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+/*msak提示框*/
+.mask i{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/sprite.png) 176px 321px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.mask{
+    width: 350px;   
+    height: 80px;   
+    background: #e4e4e4;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 80px;
+    position: absolute; 
+    top:350px;
+    left:40%;
+    display:none;
+}
+

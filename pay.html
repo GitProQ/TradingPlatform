@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>校园物品交易平台—结算</title>
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <link rel="stylesheet" type="text/css" href="css/pay.css" />
+        <link rel="shortcut icon"  href="favicon.ico" />
+    </head>
+    <body>
+        <!-- person start -->
+        <div class="person">
+            <div class="banxin">
+                <ul>
+                    <li class="login"><a href="login.html">您好，请登录！</a></li>
+                    <li><a href="register.html">免费注册</a></li>
+                    <li><a href="order.html">我的订单</a></li>
+                    <li class="geren"><s></s><a class="userName" href="personal.html">个人中心</a><div class="logoff"><a href="javascript:;">注销</a></div></li>
+                    <li class="spcar"><a href="shopping cart.html"></a><span id="cartNum">0</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- logo start -->
+        <div class="logo">
+            <div class="banxin">
+                <a href="index.html"></a>
+            </div>
+        </div>
+        <!-- main start -->
+        <div class="main">
+            <div class="banxin">
+            	<!--标题 块级切换-->
+                <div class="title clearfix">
+                	<h3>确认订单</h3>
+                	<ul>
+                		<li class="affirm focus">确认订单信息</li>
+                		<li class="paid">支付订单</li>
+                		<li class="success">支付成功</li>
+                	</ul>
+                </div>
+                <!--订单信息-->
+                <div class="Info">
+                	<div class="person-info">
+	                	<div class="order-header">
+		                	<p>确认学号、收货人、联系方式、收货地址</p>
+		                </div>
+		                <div class="order-body">
+		                	<ul>
+		                	</ul>
+		                </div>
+		                <div class="order-footer">
+		                	<a class="addAdress" href="javascript:;"><i></i>新增收货地址</a>
+		                </div>
+	                </div>
+	                <table>
+	                    <tr>
+	                        <th class="product">商品信息</th>
+	                        <th class="price">单价（元）</th>
+	                        <th class="amount">数量</th>
+	                        <th class="total">小计（元） </th>
+	                    </tr>
+	                </table>
+	                <div class="order-total clearfix">
+	                	<div>
+	                		<span>实付款（免运费）</span>
+	                		<span class="cost">￥<span class="total">0.00</span></span>
+	                	</div>
+	                </div>
+	                <div class="pay-way clearfix">
+	                	<div>
+	                		<span>支付方式：</span>
+	                		<ul>
+	                			<li class="wechat check"><i></i>微信支付</li>
+							<!--<li class="shortcut"><i></i>快捷支付</li>-->
+	                			<li class="card"><i></i>货到付款</li>
+	                		</ul>
+	                	</div>
+	                </div>
+	                <div class="commit clearfix">
+	                	<button class="payButton">确认</button>
+	                </div>
+                </div>
+                <!--微信支付模块-->
+                <div class="payment">
+                	<div class="txt">
+                		<span>请支付：</span><strong>￥</strong><i></i>
+                	</div>
+                	<div class="payCode clearfix">
+                		<div class="payCodel">
+                			<img src="img/pay/get_qr_image.png"/>
+                			<p>请打开手机微信，扫一扫完成支付</p>
+                		</div>
+                		<div class="payCoder">
+                			<img src="img/pay/pay_scan_tip.3a1360e0.jpg"/>
+                		</div>
+                	</div>
+                	<div class="leaveFor">
+                		<button class="return">&lt;&lt;返回上一步</button>
+                		<button class="refresh">支付后未跳转，请点击&gt;&gt;</button>
+                	</div>
+                </div>
+                <!--货到付款模块-->
+                <div class="delivery">
+                	<div class="txt">
+                		<img src="img/pay/payOnDelivery.jpg" />
+                		<span>您选择了货到付款支付方式</span>
+                	</div>
+                	<div class="picture">
+                		<img src="img/pay/help_img14.jpg"/>
+                	</div>
+                	<div>
+                		<button class="return">&lt;&lt;返回上一步</button>
+                		<button class="refresh">确认&gt;&gt;</button>
+                	</div>
+                </div>
+                <!--支付成功-->
+                <div class="paySuccess">
+                	<div class="show">
+                		<img src="img/pay/5-160914192R6-52.gif"/>
+                		<p>恭喜您，支付成功</p>
+                		<a href="index.html"><button class="shop">&lt;&lt;继续购物</button></a>
+                		<a href="order.html"><button class="order">查看订单&gt;&gt;</button></a>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <div class="maskBg">
+        	<div class="maskContent">
+        		<div class="modal-header">
+        			<h4>新增收货地址</h4>
+        			<i class="icon_close"></i>
+        		</div>
+        		<div class="adressForm">
+        			<div class="modal-body">
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="consName">收件人</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="consName" />
+	        				</div>
+        				</div>
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="studNo">学号</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="studNo" />
+	        				</div>
+        				</div>
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="consPhone">手机号码</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="consPhone" />
+	        				</div>
+        				</div>
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="city-select">收货地址</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="city-select"/>
+	        				</div>
+        				</div>
+        			</div>
+        			<p>请填写完整信息</p>
+        			<button class="append">确认添加</button>
+        		</div>
+        	</div>
+        </div>
+        <!-- footer start -->
+        <div class="footer">
+            <div class="banxin clearfix">
+                <div class="botList">
+                    <ul>
+                    	<li class="webchat"><i></i>快捷支付</li>
+                    	<li class="guide"><i></i>购买指引</li>
+                    	<li class="services"><i></i>优质服务</li>
+                    	<li class="distribution"><i></i>快速配送</li>
+                    	<li class="about"><i></i>关于我们</li>
+                    </ul>
+                </div>
+                <p>Copyright ©2016 Campus goods trading platform. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- back top -->
+        <div class="fix">
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=804093032&site=qq&menu=yes">
+            <i class="qq" alt="点击这里给我发消息" title="点击这里给我发消息"></i>
+            	在<br />线<br />客<br />服
+            </a>
+            <div class="bTop"></div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/goods.js"></script>
+        <script type="text/javascript" src="js/pay.js"></script>
+    </body>
+</html>

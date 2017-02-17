@@ -1,0 +1,449 @@
+/* 
+* @Author: Marte
+* @Date:   2016-09-26 08:49:09
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-10-08 18:38:13
+*/
+body{
+	position: relative;
+}
+/*nav*/
+.nav {
+    height: 35px;
+    padding-top: 30px;
+    border-bottom:2px solid #52B0FF;
+}
+.nav .banxin{
+    height: 35px;
+    border-bottom:2px solid #52B0FF;
+}
+.nav ul li{
+    float:left;
+    padding:0 30px;
+    line-height: 35px;
+}
+.nav ul .classIfy{
+    width: 180px;
+    padding: 0 10px;
+    height: 35px;
+    color:#FF4500;
+    background: #52B0FF;
+}
+.nav ul li a{
+    color:#666666;
+    display: block;
+}
+.nav ul li a:hover{
+    color:#ff0321;
+}
+/*mainTop*/
+.mainTop{
+    height: 440px;
+}
+.list{
+    width: 200px;
+    float:left;
+}
+.list li{
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background: #52B0FF;
+    padding:0 10px;
+    border-top: 1px dotted #999;
+}
+.list li a{
+	display: block;
+}
+.list li:hover{
+    background: #f5f5f5;
+}
+.list li:hover a{
+    color:#ff0321;
+}
+.list li a{
+    color:white;
+    font-size: 14px;
+}
+
+
+/*轮播图*/
+.slider{
+    width: 800px;
+    height: 410px;
+    float:left;
+    position: relative;
+    z-index: 20;
+}
+.slider .sliderImg{
+    width: 800px;
+    height: 410px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .sliderImg li{
+    width: 800px;
+    height: 410px;
+    position: absolute;
+}
+.slider .sliderImg img{
+    width: 100% ;
+}
+
+.slider .arrow{
+    width: 800px;
+    height: 66px;
+    position: absolute;
+    z-index: 10;
+    top:50%;
+    margin-top: -33px;
+    cursor:pointer;
+    display:none;
+}
+.arrow span{
+    width: 40px;
+    height: 66px;
+}
+.arrow .prev,.arrow .left{
+    float:left;
+    background: url(../img/index/b1.png) -8px -7px;
+}
+.arrow .prev:hover,.arrow .left:hover{
+    background: url(../img/index/b3.png) -8px -7px;
+}
+.arrow .next,.arrow .right{
+    float:right;
+    background: url(../img/index/b1.png) -63px -7px;
+}
+.arrow .next:hover,.arrow .right:hover{
+    background: url(../img/index/b3.png) -63px -7px;
+}
+
+.circle{
+    position: absolute;
+    z-index: 10;
+    bottom: 8px;
+    left:50%;
+}
+.circle span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/index/cir.png);
+    margin: 3px 5px;
+    cursor: pointer;
+}
+
+
+/*mainMid*/
+.mainMid .slogan {
+    height: 61px;
+    background: #999;
+}
+.mainMid .slogan div{
+    float:left;
+    width: 61px;
+    height: 61px;
+    margin: 0 136px;
+}
+.slOne{
+    background: url(../img/index/aG.png);
+}
+.slTwo{
+    background: url(../img/index/aH.png);
+}
+.slThr{
+    background: url(../img/index/aI.png);
+}
+/*焦点轮播*/
+.jdSlider{
+    height: 170px;
+    overflow:hidden; 
+    position: relative;
+}
+.jdSlider ul{
+    height: 164px;
+    width: 5000px;
+    position: absolute;
+}
+.jdSlider ul li,.jdSlider a{
+    float:left;
+}
+.jdSlider .arrow{
+    width: 1000px;
+    height: 66px;
+    position: absolute;
+    top:50%;
+    margin-top: -33px;
+    cursor:pointer;
+    display:none;
+}
+
+/*mainBot*/
+.mainBot{
+    margin-bottom: 30px;
+}
+.mainBot .rest{
+    width: 120px;
+    height: 20px;
+    background: url(../img/index/slogn.jpg) 2px -40px;
+    margin:10px 0 20px 0;
+}
+.mainBot ul{
+    overflow:hidden;
+}
+.mainBot ul li{
+    float:left;
+    margin-right: 9px;
+    height: 194px;
+}
+.goods#one ul li{
+	margin-right: 3px;
+}
+.mainBot .goods{
+    padding-top: 20px;
+    height: 230px;
+}
+.mainBot .goods .goInfo img{
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+.mainBot .goods>span{
+    color:#9a9a9a;
+    vertical-align: middle; 
+    font-family: "华文行楷";
+}
+#two a,#three a,#four a{
+    display:block;
+    font-size: 12px;
+    color:#666;
+}
+.goods a:hover{
+    color:#ff0321;
+}
+.goInfo{
+    width: 210px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+.goInfo.last{
+	border-right: none;
+}
+/*.goInfo a,.goInfo span{
+    margin-left: 35px;
+}*/
+.goInfo a{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.goInfo img{
+    margin-left: 10px;
+}
+.goInfo span{
+    color:#ff0321;
+}
+
+
+.city{
+    min-width: 1000px;
+    height: 350px;
+    background: url(../img/index/bg_layer.jpg);
+}
+.city .banxin{
+    width: 1000px;
+    margin:0 auto;
+    position: relative;
+}
+.city img{
+    width: 100%;
+    position: absolute;
+}
+.city li{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    display:none;
+}
+.lightOne{
+    background: url(../img/index/light.png) 0 16px;
+}
+.lightTwo{
+    background: url(../img/index/light.png) 0 251px;
+}
+.lightThr{
+    background: url(../img/index/light.png) 0 486px;
+}
+.lightFou{
+    background: url(../img/index/light.png) 0 720px;
+}
+.lightFiv{
+    background: url(../img/index/light.png) 0 954px;
+}
+
+/*footer*/
+.footer{
+    margin-top: -100px;
+}
+.footer .banxin div{
+    height: 100px;
+    float:left;
+    text-align: center;
+    color:white;
+}
+.botLeft{
+    width: 600px;
+    line-height: 50px;
+}
+.botRight{
+    width: 400px;
+    line-height: 50px;
+}
+
+/*漂浮*/
+.flotage{
+	width: 100%;
+	height: 22px;
+	position: absolute;
+	top:-30px;
+}
+.flotage img{
+	margin-left: 8%;
+	position: relative;
+	z-index: 30;
+}
+.flotage img:nth-child(1){
+	animation: move 5s infinite linear forwards 3.1s;
+	-moz-animation: move 5s infinite linear forwards 3.1s;
+	-ms-animation: move 5s infinite linear forwards 3.1s;
+	-webkit-animation: move 5s infinite linear forwards 3.1s;
+	-o-animation: move 5s infinite linear forwards 3.1s;
+}
+.flotage img:nth-child(2){
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-ms-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+	transform: rotate(50deg);
+	animation: move 5s infinite linear forwards 1.6s;
+	-moz-animation: move 5s infinite linear forwards 1.6s;
+	-ms-animation: move 5s infinite linear forwards 1.6s;
+	-webkit-animation: move 5s infinite linear forwards 1.6s;
+	-o-animation: move 5s infinite linear forwards 1.6s;
+}
+.flotage img:nth-child(3){
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+	animation: move 5s infinite linear forwards 2.5s;
+	-moz-animation: move 5s infinite linear forwards 2.5s;
+	-ms-animation: move 5s infinite linear forwards 2.5s;
+	-webkit-animation: move 5s infinite linear forwards 2.5s;
+	-o-animation: move 5s infinite linear forwards 2.5s;
+}
+.flotage img:nth-child(4){
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	animation: move 8s infinite linear forwards 4.8s;
+	-moz-animation: move 8s infinite linear forwards 4.8s;
+	-ms-animation: move 8s infinite linear forwards 4.8s;
+	-webkit-animation: move 8s infinite linear forwards 4.8s;
+	-o-animation: move 8s infinite linear forwards 4.8s;
+}
+.flotage img:nth-child(5){
+	animation: move 6s infinite linear forwards 5.4s;
+	-moz-animation: move 6s infinite linear forwards 5.4s;
+	-ms-animation: move 6s infinite linear forwards 5.4s;
+	-webkit-animation: move 6s infinite linear forwards 5.4s;
+	-o-animation: move 6s infinite linear forwards 5.4s;
+}
+.flotage img:nth-child(6){
+	animation: move 8s infinite linear forwards 4s;
+	-moz-animation: move 8s infinite linear forwards 4s;
+	-ms-animation: move 8s infinite linear forwards 4s;
+	-webkit-animation: move 8s infinite linear forwards 4s;
+	-o-animation: move 8s infinite linear forwards 4s;
+}
+.flotage img:nth-child(7){
+	animation: move 10s infinite linear forwards 2.6s;
+	-moz-animation: move 10s infinite linear forwards 2.6s;
+	-ms-animation: move 10s infinite linear forwards 2.6s;
+	-webkit-animation: move 10s infinite linear forwards 2.6s;
+	-o-animation: move 10s infinite linear forwards 2.6s;
+}
+.flotage img:nth-child(8){
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	transform: rotate(60deg);
+	animation: move 9s infinite linear forwards 1s;
+	-moz-animation: move 9s infinite linear forwards 1s;
+	-ms-animation: move 9s infinite linear forwards 1s;
+	-webkit-animation: move 9s infinite linear forwards 1s;
+	-o-animation: move 9s infinite linear forwards 1s;
+}
+.flotage img:nth-child(9){
+	-webkit-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	-o-transform: rotate(120deg);
+	transform: rotate(120deg);
+	animation: move 7s infinite linear forwards 7.2s;
+	-moz-animation: move 7s infinite linear forwards 7.2s;
+	-ms-animation: move 7s infinite linear forwards 7.2s;
+	-webkit-animation: move 7s infinite linear forwards 7.2s;
+	-o-animation: move 7s infinite linear forwards 7.2s;
+}
+.flotage img:nth-child(10){
+	-webkit-transform: rotate(150deg);
+	-moz-transform: rotate(150deg);
+	-ms-transform: rotate(150deg);
+	-o-transform: rotate(150deg);
+	transform: rotate(150deg);
+	animation: move 5s infinite linear forwards 3.8s;
+	-moz-animation: move 5s infinite linear forwards 3.8s;
+	-ms-animation: move 5s infinite linear forwards 3.8s;
+	-webkit-animation: move 5s infinite linear forwards 3.8s;
+	-o-animation: move 5s infinite linear forwards 3.8s;
+}
+
+@-moz-keyframes move{
+	0%{ transform: translateY(0)translateX(0)rotateZ(0deg);}
+	50%{ transform: translateY(1150px)translateX(50px)rotateZ(180deg);}
+	100%{transform: translateY(2160px)translateX(-50px)rotateZ(360deg);}
+}
+@-ms-keyframes move{
+	0%{ transform: translateY(0)translateX(0)rotateZ(0deg);}
+	50%{ transform: translateY(1150px)translateX(50px)rotateZ(180deg);}
+	100%{transform: translateY(2160px)translateX(-50px)rotateZ(360deg);}
+}
+@-webkit-keyframes move{
+	0%{ transform: translateY(0)translateX(0)rotateZ(0deg);}
+	50%{ transform: translateY(1150px)translateX(50px)rotateZ(180deg);}
+	100%{transform: translateY(2160px)translateX(-50px)rotateZ(360deg);}
+}
+@keyframes move{
+	0%{ transform: translateY(0)translateX(0)rotateZ(0deg);}
+	50%{ transform: translateY(1150px)translateX(50px)rotateZ(180deg);}
+	100%{transform: translateY(2160px)translateX(-50px)rotateZ(360deg);}
+}
+
+
+/*懒加载*/
+.goods>ul>li>a>img{
+    width: 330px;
+    height: 185px;
+    background: url(../img/index/5-160914192R4-50.gif) 50% no-repeat;
+}
+.goods ul .goInfo>a>img{
+    width: 130px;
+    height: 130px;
+    background: url(../img/index/5-160914192R4-50.gif) 50% no-repeat;
+}
+

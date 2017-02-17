@@ -1,0 +1,59 @@
+/*content*/
+
+.content{
+   padding-top: 50px; 
+   min-height: 600px;
+}
+.content h4{
+	margin-bottom: 20px;
+}
+.content .showTip{
+	height: 500px;
+	text-align: center;
+	line-height: 500px;
+	display: none;
+}
+.goods{
+    width: 230px;
+    height: 330px;
+    background: #fff;
+    display:inline-block;
+    margin:0 9px 20px;
+    overflow: hidden;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.goods:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+	-webkit-transform: translate3d(0,-2px,0);
+	transform: translate3d(0,-2px,0);
+}
+.goods .img{
+    width: 230px;
+    height: 230px;
+    background: url(../img/5-160914192R0-50.gif) 50% no-repeat;
+}
+.goods .img img{
+    width: 230px;
+    height: 230px;
+}
+.goods .goods_name{
+    padding-left: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 12px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.goods .goods_price{
+    padding-left: 10px;
+    font-size: 18px;
+    color: #2A2F31;
+    float: left;
+    margin-top: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,496 @@
+/*主体*/
+.main .title{
+	padding-top: 30px;
+}
+.main .title ul{
+	float:right;
+}
+.main .title ul li,.main h3{
+	float:left;
+}
+.main h3{
+	line-height: 36px;
+}
+.main .title ul li{
+	width: 146px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background: url(../img/sprite.png) no-repeat;
+	position: relative;
+}
+.main .title ul li.focus{
+	background-position: -53px -164px;
+}
+.main .title .affirm{
+	background-position: -53px -201px;
+	z-index: 3;
+}
+.main .title .paid{
+	margin-left: -12px;
+	background-position: -53px -201px;
+	z-index: 2;
+}
+.main .title .success{
+	margin-left: -12px;
+	background-position: -53px -201px;
+	z-index: 1;
+}
+
+/*收货信息*/
+.person-info{
+	border: 1px solid #f5f5f5;
+	margin-top: 30px;
+    margin-bottom: 40px;
+}
+.main .order-header{
+	height: 40px;
+	line-height: 40px;
+ 	background-color: #f5f5f5;
+ 	padding: 0 30px;
+}
+.main .order-header p{
+	color: #7b7b7b;
+}
+
+.main .order-body{
+	padding: 20px 30px;
+}
+.main .order-body li{
+	padding: 5px 20px;
+	border: 1px solid white;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.main .order-body li.checked{
+	border: 1px solid #00BFFF;
+}
+.main .order-body .del{
+	float: right;
+	cursor: pointer;
+}
+
+.main .order-footer{
+	padding: 0 20px 20px;
+}
+.main .order-footer .addAdress{
+	display: inline-block;
+	padding: 7px 14px;
+    margin-left: 53px;
+    border-radius: 2px;
+    border: 1px solid #f5f5f5;
+    color: #3f3f3f;
+}
+.main .order-footer .addAdress:hover{
+	background: #f4f4f4;
+}
+.main .order-footer .addAdress i{
+	width: 14px;
+    height: 14px;
+    margin-right: 12px;
+    margin-top: 3px;
+    display: inline-block;
+    background: url(../img/sprite.png) no-repeat -1px -209px;
+}
+/*模态框*/
+.maskBg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/pay/modal-bg.b7714bad.png) repeat;
+    display: none;
+}
+.maskContent{
+	position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 15% auto;
+    background-color: #fff;
+    border: 2px solid #eee;
+}
+.modal-header{
+	padding: 20px;
+    border-bottom: 1px solid #f6f6f6
+}
+.modal-header h4{
+	font-size: 16px;
+    color: #1e1e1e;
+    font-weight: 100;
+}
+.modal-header i{
+	position: absolute;
+    width: 13px;
+    height: 13px;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+    background: url(../img/sprite.png) no-repeat -63px -371px;
+}
+.adressForm .modal-body{
+	padding: 20px 0 0;
+}
+.adressForm .row{
+	padding: 12px 0;
+    height: 30px;
+    line-height: 30px;
+}
+.adressForm .meta{
+	margin-left: 180px;
+	float: left;
+	width: 100px;
+	text-align: right;
+}
+.adressForm .metaVal{
+	margin-left: 300px;
+}
+.adressForm .metaVal input{
+	width: 292px;
+    height: 28px;
+    padding-left: 8px;
+    border: 1px solid #e7e7e7;
+}
+.adressForm p{
+	text-align: center;
+	color: red;
+	padding-bottom: 10px;
+	visibility: hidden;
+}
+.adressForm .append{
+	width: 180px;
+    line-height: 48px;
+    font-size: 18px;
+	border: 1px solid #35c367;
+    background-color: #35c367;
+    color: #fff;
+    cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+.adressForm .append:hover{
+	background-color: #45d176;
+}
+
+table{
+	border-collapse: collapse;
+}
+table tr{
+    width: 998px;
+    display: table;
+    border-bottom: 1px solid #f5f5f5;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+table th{
+    height: 40px;
+    line-height: 40px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 200;
+    background: #f5f5f5;
+}
+table td{
+	text-align: center;
+	height: 100px;
+}
+table .product{
+    width: 500px;
+    padding: 0 0 0 80px;
+    text-align: left; 
+}
+table .price{
+    width: 180px;
+}
+table .amount{
+    width: 250px;
+}
+table .total{
+    width: 180px;
+}
+table tr td .check{
+	float:left;
+	width: 15px;
+	height: 15px;
+	margin: 35px 20px;
+}
+table tr td img{
+    width: 80px;
+    height: 80px;
+    float:left;
+}
+
+
+.add,.reduce{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fafafa;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.reduce{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    left: 0;
+}
+tr .num{
+    width: 40px;
+    height: 31px;
+    vertical-align: middle;
+    line-height: 31px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+.add{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+tr button{
+	color: #a3a3a3;
+    font-size: 14px;
+    min-width: 80px;
+    padding: 7px 14px;
+    border-radius: 2px;
+    border: 1px solid #f5f5f5;
+    background-color: #fcfcfc;
+    cursor: pointer;
+}
+tr button:hover{
+	background-color: gold;
+}
+tr .one{
+	width: 410px;
+	line-height: 45px;
+}
+tr .one a{
+	color: #3f3f3f;
+    margin: 20px 0 10px 0 ;
+    font-size: 14px;
+    text-decoration: none;
+}
+tr .one a:hover{
+	color:#ff0321;
+}
+tr .one p{
+	color: #7b7b7b;
+    font-size: 14px;
+}
+tr .two{
+	width: 132px;
+}
+tr .three{
+	width: 168px;
+}
+tr .four{
+	width: 132px;
+}
+tr .info{
+	width: 402px;
+	padding-left: 80px;
+	line-height: 45px;
+}
+tr .price{
+	width: 135px;
+}
+tr .number{
+	width: 215px;
+}
+
+.order-total{
+	margin-top: 20px;
+}
+.order-total div{
+	float: right;
+}
+.order-total>div>span{
+	height: 30px;
+    line-height: 30px;
+    color: #7b7b7b;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 0;
+    width: 163px;
+    text-align: center;
+}
+.order-total .cost{
+	font-size: 22px;
+	color: #1e1e1e;
+}
+
+.pay-way{
+	margin-top: 30px;
+}
+.pay-way div{
+	float: right;
+}
+.pay-way div span,.pay-way div ul,.pay-way div ul li{
+	float: left;
+}
+.pay-way div span{
+	line-height: 46px;
+	color: #7b7b7b;
+}
+.pay-way div ul li{
+	width: 150px;
+	height: 46px;
+	border-radius: 2px;
+    font-size: 15px;
+    line-height: 46px;
+    color: #7b7b7b;
+    text-align: center;
+   	border: 2px solid #f5f5f5;
+   	margin-right: 3px;
+   	cursor: pointer;
+}
+.pay-way div ul li i{
+	display: inline-block;
+	background: url(../img/sprite.png) no-repeat;
+	vertical-align: middle;
+}
+.pay-way .wechat i{
+	width: 24px;
+	height: 21px;
+	background-position: -176px -363px;
+}
+.pay-way .card i{
+	width: 30px;
+	height: 30px;
+	background: url(../img/pay/pay.png) no-repeat;
+}
+.pay-way .shortcut i{
+	width: 54px;
+	height: 26px;
+	background-position: -146px -312px;
+}
+
+.commit{
+	padding: 20px 0 100px;
+}
+.payButton{
+	float: right;
+	width: 148px;
+	border: 1px solid #35c367;
+    background-color: #35c367;
+    color: #fff;
+    line-height: 48px;
+    font-size: 18px;
+   	text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.pay-way div ul li.check{
+	border: 2px solid #35c367;
+	background: url(../img/check.png) no-repeat right bottom;
+}
+
+
+/*支付模块*/
+.payment{
+	padding: 20px 0;
+	display: none;
+}
+.payment .txt{
+	line-height: 50px;
+	padding-left: 30px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.payment .txt strong,.payment .txt i{
+	font-size: 22px;
+}
+.payment .payCode{
+	margin-top: 20px;
+	padding-top: 60px;
+}
+.payment .payCodel,.payment .payCoder{
+	float: left;
+}
+.payment .payCodel{
+	padding-top: 20px;
+	margin-left: 170px;
+}
+.payment .payCodel img{
+	display: block;
+}
+.payment .payCodel p{
+	width: 261px;
+	height:40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    background-color: #35c367;
+}
+.payment .payCoder{
+	margin-left: 120px;
+}
+.payment .leaveFor{
+	padding: 20px 0 100px;
+	text-align: center;
+}
+.payment .leaveFor button,.delivery button{ 
+	width: 200px;
+	height: 35px;
+	border: none;
+	color: white;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.payment .return,.delivery .return{
+	margin-right: 200px;
+	background: #00BFFF;
+}
+.payment .refresh,.delivery .refresh{
+	background: #35c367;
+}
+/*货到付款*/
+.delivery{
+	padding: 50px 0;
+	text-align: center;
+	display: none;
+}
+.delivery .txt img{
+	vertical-align: middle;
+}
+.delivery .picture{
+	margin: 30px 0 50px;
+}
+.paySuccess{
+	display: none;
+	text-align: center;
+	padding: 30px 0;
+}
+.paySuccess p{
+	margin: 0 0 20px;
+	font-size: 20px;
+	color: red;
+}
+.paySuccess .show button{
+	width: 200px;
+	height: 35px;
+	border: none;
+	color: white;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.paySuccess .shop{
+	margin-right: 200px;
+	background: #00BFFF;
+}
+.paySuccess .order{
+	background: #35c367;
+}

@@ -1,0 +1,58 @@
+<div class="banner" ng-app="modApp" ng-controller="modCtrl">
+	<div class="banxin">
+		<p ng-bind="data.classfiy"></p>
+		<div class="img">
+			<div class="bigImg">
+				<img ng-src="{{data.big1}}" />
+				<img ng-src="{{data.big2}}" />
+				<img ng-src="{{data.big3}}" />
+				<img ng-src="{{data.big4}}" />
+			</div>
+			<ul>
+				<li><img ng-src="{{data.small1}}" /></li>
+				<li><img ng-src="{{data.small2}}" /></li>
+				<li><img ng-src="{{data.small3}}" /></li>
+				<li><img ng-src="{{data.small4}}" /></li>
+			</ul>
+		</div>
+		<div class="info">
+			<h2 ng-bind="data.name"></h2>
+			<p ng-bind="data.info"></p>
+			<span ng-bind="data.price"></span><del>原价{{data.oldprice}}</del>
+			<hr />
+			<p>款式</p>
+			<ul>
+				<li name="good2" value="0" ng-bind="data.txt1"></li>
+				<li name="good2" value="1" ng-bind='data.txt2'></li>
+			</ul>
+			<p>数量</p>
+			<input class="reduce" type="button" value="-" />
+			<input class="num" type="text" value="1" />
+			<input class="add" type="button" value="+" />
+			<span class="remain">( 还剩<i>{{data.remain}}</i>件 )</span>
+			<a class="addCar" href="javascript:;" value="{{data.val}}">加入购物车</a>
+			<a class="buy" href="javascript:;" value="{{data.val}}">立即购买</a>
+		</div>
+	</div>
+</div>
+<!-- content start -->
+<div class="content">
+	<div class="banxin">
+		<div class="contentImg">
+			<ul>
+				<li>物品详情</li>
+			</ul>
+		</div>
+		<div class="demo">
+			<img ng-src="{{data.img1}}" />
+			<img ng-src="{{data.img2}}" />
+			<img ng-src="{{data.img3}}" />
+			<img ng-src="{{data.img4}}" />
+			<img ng-src="{{data.img5}}" />
+			<img ng-src="{{data.img6}}" />
+			<img ng-src="{{data.img7}}" />
+			<img ng-src="{{data.img8}}" />
+		</div>
+	</div>
+</div>
+<script src="js/goods.js"></script>

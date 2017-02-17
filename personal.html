@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>校园物品交易平台—个人中心</title>
+		<link href="lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+	    <script src="lib/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+	    <script src="lib/Respond-1.4.2/src/respond.js"></script>
+	    <![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+	</head>
+	<body>
+		<!--导航栏-->
+		<div class="nav navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      		</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="login active">
+							<a href="login.html">您好，请登录！</a>
+						</li>
+						<li>
+							<a href="register.html">免费注册</a>
+						</li>
+						<li>
+							<a href="order.html">我的订单</a>
+						</li>
+						<li class="geren">
+							<s></s><a class="userName" href="personal.html">个人中心</a>
+							<div class="logoff"><a href="javascript:;">注销</a></div>
+						</li>
+						<li class="spcar">
+							<a href="shopping cart.html"></a>
+							<span id="cartNum">0</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--logo start--> 
+		<div class="logo container-fluid">
+			<div class="container">
+				<a class="col-xs-12 col-sm-6 col-sm-offset-1" href="index.html"></a>
+			</div>
+		</div>
+		<!--logo end--> 
+		<!--main start--> 
+		<div class="main container">
+			<div class="title">
+				<h4>个人中心</h4>
+			</div>
+			<div class="tab col-xs-12 col-sm-3">
+				<div class="user">
+					<img src="img/personal/person_icon.png"/>
+					<span class="userName">个人中心</span>
+					<a class="exit" href="javascript:;">[ 退出 ]</a>
+				</div>
+				<ul>
+					<li>交易管理</li>
+					<li><a href="shopping cart.html">我的购物车</a></li>
+					<li><a href="order.html">我的订单</a></li>
+					<li>个人信息管理</li>
+					<li><a class="gotoSafe" href="javascript:;">账户安全</a></li>
+					<li><a class="gotoAddress" href="javascript:;">管理收货地址</a></li>
+					<li class="retreat">&lt;&lt;返回</li>
+				</ul>
+			</div>
+			<div class="module col-xs-12 col-sm-9">
+				<div class="waveCanvas">
+					<div class="browserIcon">
+						<div class="cloud">
+							<img class="cloud1" src="img/personal/cloud1.png"/>
+							<img class="cloud2" src="img/personal/cloud2.png"/>
+							<img class="cloud3" src="img/personal/cloud3.png"/>
+						</div>
+						<div class="max">
+							<img src="img/personal/coming.png"/>
+						</div>
+						<div class="imgBox">
+							<img src="img/personal/1212.png" />
+						</div>
+					</div>
+					<canvas id="wave" >您的浏览器不支持canvas，请升级浏览器以获得更好的体验</canvas>
+				</div>
+				<div class="safe">
+					<h4>修改密码:</h4>
+					<div class="form">
+						<div>
+							<label for="oldPw">请输入旧密码：</label>
+							<input id="oldPw" type="text" />
+						</div>
+						<div>
+							<label for="newPw">请输入新密码：</label>
+							<input id="newPw" type="text" />
+						</div>
+						<div>
+							<label for="newPwtwo">请再次输入新密码：</label>
+							<input id="newPwtwo" type="text" />
+						</div>
+						<span class="error">旧密码输入错误！</span>
+						<button class="changePw">确认修改</button>
+					</div>
+				</div>
+				<div class="address">
+					<h4>管理收货地址:</h4>
+					<div class="person-info">
+	                	<div class="order-header">
+		                	<p>确认学号、收货人、联系方式、收货地址</p>
+		                </div>
+		                <div class="order-body">
+		                	<ul>
+		                	</ul>
+		                </div>
+	                </div>
+					<div class="modal-body">
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="consName">收件人:</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="consName" />
+	        				</div>
+        				</div>
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="studNo">学号:</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="studNo" />
+	        				</div>
+        				</div>
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="consPhone">手机号码:</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="consPhone" />
+	        				</div>
+        				</div>
+        				<div class="row">
+        					<div class="meta">
+	        					<label for="city-select">收货地址:</label>
+	        				</div>
+	        				<div class="metaVal">
+	        					<input type="text" id="city-select"/>
+	        				</div>
+        				</div>
+        			</div>
+        			<p class="error">请填写完整信息</p>
+        			<button class="append">确认修改</button>
+				</div>
+			</div>
+		</div>
+		<!--main end--> 
+		<!-- footer start -->
+		<div class="footer">
+			<div class="container clearfix">
+				<div class="botList col-xs-12">
+					<ul>
+						<li class="webchat col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1"><i></i>快捷支付</li>
+						<li class="guide col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>购买指引</li>
+						<li class="services col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>优质服务</li>
+						<li class="distribution col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>快速配送</li>
+						<li class="about col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>关于我们</li>
+					</ul>
+				</div>
+				<p>Copyright ©2016 Campus goods trading platform. All Rights Reserved.</p>
+			</div>
+		</div>
+		<!-- back top -->
+		<div class="fix">
+			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=804093032&site=qq&menu=yes">
+				<i class="qq" alt="点击这里给我发消息" title="点击这里给我发消息"></i> 
+				在<br />线<br />客<br />服
+			</a>
+			<div class="bTop"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/wave.js"></script>
+		<script type="text/javascript" src="js/personal.js"></script>
+	</body>
+</html>

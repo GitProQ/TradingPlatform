@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>校园物品交易平台—超市 百货</title>
+		<link href="lib/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+	    <script src="lib/html5shiv-3.7.3/dist/html5shiv.min.js"></script>
+	    <script src="lib/Respond-1.4.2/src/respond.js"></script>
+	    <![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/market.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--[if IE 8]>
+	        <script src="js/es5-shim.min.js"></script>        
+	    <![endif]-->
+	</head>
+	<body ng-app="marketApp" ng-controller="marketCtrl">
+		<!--导航栏-->
+		<div class="nav navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      		</button>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="login active">
+							<a href="login.html">您好，请登录！</a>
+						</li>
+						<li>
+							<a href="register.html">免费注册</a>
+						</li>
+						<li>
+							<a href="order.html">我的订单</a>
+						</li>
+						<li class="geren">
+							<s></s><a class="userName" href="personal.html">个人中心</a>
+							<div class="logoff"><a href="javascript:;">注销</a></div>
+						</li>
+						<li class="spcar">
+							<a href="shopping cart.html"></a>
+							<span id="cartNum">0</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--logo start--> 
+		<div class="logo container-fluid">
+			<div class="container">
+				<a class="col-xs-12 col-sm-6 col-sm-offset-1" href="index.html"></a>
+				<form class="col-xs-12 col-sm-6" action="search.html" target="_parent">
+					<p>so 你想要的</p>
+					<input type="text" />
+					<input class="search" type="submit" value="搜索" />
+				</form>
+			</div>
+		</div>
+		<!--banner start-->
+		<div class="focus container">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			    <ol class="carousel-indicators">
+			        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			    </ol>
+			    <!-- 轮播的内容 -->
+			    <div class="carousel-inner" role="listbox" id="inner1">
+					<div class="item active">
+						<li>
+							<img src="img/market/slide-banner-1.jpg"/>
+						</li>
+			        </div>
+			        <div class="item">
+			        	<li>
+							<img src="img/market/slide-banner-2.jpg"/>
+						</li>
+			        </div>
+			        <div class="item">
+			        	<li>
+							<img src="img/market/slide-banner-3.jpg"/>
+						</li>
+			        </div>
+			        <div class="item">
+			        	<li>
+							<img src="img/market/slide-banner-4.jpg"/>
+						</li>
+			        </div>
+			        <div class="item">
+			        	<li>
+							<img src="img/market/slide-banner-5.jpg"/>
+						</li>
+			        </div>
+			    </div>
+			    <!-- Controls -->
+			    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+			        <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+			        <span class="sr-only">Next</span>
+			    </a>
+			</div>
+		</div>
+		<!--banner end-->
+		<!-- content start -->
+		<div class="content">
+			<div class="container">
+				<div class="title col-xs-12">
+					<img src="img/market/5-15062FZ937.gif" />
+				</div>
+				<div class="goods col-xs-6 col-sm-4 col-md-3" ng-repeat="item in data" ng-init="load()">
+					<div class="goodsItem">
+						<div class="img">
+							<a href="{{item.href}}"><img class="lazy" src="img/blank.gif" data-echo="{{item.img}}" /></a>
+						</div>
+						<div class="inf clearfix">
+							<p class="goods_name" title="{{item.info}}" ng-bind="item.info"></p>
+							<p class="goods_price">￥<span class="num" ng-bind="item.price"></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer start -->
+		<div class="footer">
+			<div class="container clearfix">
+				<div class="botList col-xs-12">
+					<ul>
+						<li class="webchat col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1"><i></i>快捷支付</li>
+						<li class="guide col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>购买指引</li>
+						<li class="services col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>优质服务</li>
+						<li class="distribution col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>快速配送</li>
+						<li class="about col-xs-12 col-sm-4 col-md-3 col-lg-2"><i></i>关于我们</li>
+					</ul>
+				</div>
+				<p>Copyright ©2016 Campus goods trading platform. All Rights Reserved.</p>
+			</div>
+		</div>
+		<!-- back top -->
+		<div class="fix">
+			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=804093032&site=qq&menu=yes">
+				<i class="qq" alt="点击这里给我发消息" title="点击这里给我发消息"></i> 
+				在<br />线<br />客<br />服
+			</a>
+			<div class="bTop"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/swipe.js"></script>
+		<script type="text/javascript" src="js/market.js"></script>
+	</body>
+</html>

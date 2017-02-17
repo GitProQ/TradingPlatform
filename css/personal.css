@@ -1,0 +1,282 @@
+body{
+    min-width: 420px;
+}
+a{
+	text-decoration: none !important;
+}
+
+.navbar{
+	min-height: 40px;
+	background: #27292b;
+	border-radius: 0;
+	margin-bottom: 0;
+}
+.navbar-nav li a {
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+}
+.navbar-nav>.geren a{
+	padding: 0 10px 0 0;
+}
+.navbar-nav>.geren s{
+	margin-right: 5px;
+}
+.navbar-nav>.spcar a{
+	margin-top: 5px;
+}
+.nav li a:hover,.nav li a:focus {
+    background-color: #27292b;
+    color: #52B0FF;
+}
+.nav #cartNum{
+	left: 20px;
+}
+.nav .logoff{
+	position: absolute;
+}
+.navbar-toggle{
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-color: #fff;
+	color: white;
+}
+/*logo*/
+.logo>.container>a{
+    margin-top: 20px;
+    display:inline-block;
+    width: 285px;
+    height: 50px;
+    background:url(../img/logo.png);
+}
+
+/*main*/
+.main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 600px;
+}
+.main .title{
+	padding: 0 30px 10px;
+	border-bottom: 1px solid #f5f5f5;
+	margin-bottom: 30px;
+}
+.main .user{
+	text-align: center;
+}
+.main .user img{
+	display: block;
+	margin: 0 auto 20px;
+}
+.main .tab{
+	padding-bottom: 50px;
+	border-right: 1px solid #f5f5f5;
+}
+.main .tab li,.main .tab a{
+	font-size: 16px;
+}
+.main .tab ul{
+	margin-top: 20px;
+	text-align: center;
+}
+.main .tab ul li{
+	line-height: 30px;
+}
+.main .tab .retreat{
+	cursor: pointer;
+}
+
+.main .waveCanvas{
+	position: relative;
+	background: url(../img/personal/page_bg.jpg) no-repeat bottom;
+}
+.main .cloud img{
+	position: absolute;
+}
+.main .cloud1{
+	top: 60px;
+	left: 5%;
+	z-index: 6;
+	-moz-animation: cloudRight 2s ease-in-out infinite alternate 1s;
+	-ms-animation: cloudRight 2s ease-in-out infinite alternate 1s;
+    -webkit-animation: cloudRight 2s ease-in-out infinite alternate 1s;
+    animation: cloudRight 2s ease-in-out infinite alternate 1s;
+}
+.main .cloud2{
+	top: 30px;
+	right: 20%;
+	z-index: 4;
+	-moz-animation: cloudLeft 2s ease-in-out infinite alternate;
+	-ms-animation: cloudLeft 2s ease-in-out infinite alternate;
+    -webkit-animation: cloudLeft 2s ease-in-out infinite alternate;
+    animation: cloudLeft 2s ease-in-out infinite alternate;
+}
+.main .cloud3{
+	top: 100px;
+	right: 6%;
+	z-index: 3;
+	-moz-animation: cloudLeft 2s ease-in-out infinite alternate;
+	-ms-animation: cloudLeft 2s ease-in-out infinite alternate;
+    -webkit-animation: cloudLeft 2s ease-in-out infinite alternate;
+    animation: cloudLeft 2s ease-in-out infinite alternate;
+}
+@keyframes cloudRight{
+	0%{}
+	100%{
+		-moz-transform: translate3d(20px, 0, 0);
+	    -ms-transform: translate3d(20px, 0, 0);
+	    -webkit-transform: translate3d(20px, 0, 0);
+	    transform: translate3d(20px, 0, 0);
+	}
+}
+@keyframes cloudLeft{
+	0%{}
+	100%{
+		-moz-transform: translate3d(-15px, 0, 0);
+	    -ms-transform: translate3d(-15px, 0, 0);
+	    -webkit-transform: translate3d(-15px, 0, 0);
+	    transform: translate3d(-15px, 0, 0);
+	}
+}
+.main .waveCanvas .browserIcon{
+	text-align: center;
+	padding-bottom: 100px;
+}
+.main .max img{
+	width: 50%;
+	position: relative;
+	z-index: 5;
+}
+.main .waveCanvas .browserIcon .imgBox{
+	position: absolute;
+	bottom: 20px;
+	left: 8%;	
+	-moz-animation: swing 5s ease-in-out infinite alternate;
+	-ms-animation: swing 5s ease-in-out infinite alternate;
+    -webkit-animation: swing 5s ease-in-out infinite alternate;
+    animation: swing 5s ease-in-out infinite alternate;
+}
+.main .waveCanvas .imgBox img{
+	width: 50%;
+	-moz-animation: move 2s ease-in-out infinite alternate;
+	-ms-animation: move 2s ease-in-out infinite alternate;
+    -webkit-animation: move 2s ease-in-out infinite alternate;
+    animation: move 2s ease-in-out infinite alternate;
+}
+@keyframes swing{
+	0%{ 
+		-moz-transform: translate3d(0, 0, 0) rotate(0deg);
+	    -ms-transform: translate3d(0, 0, 0) rotate(0deg);
+	    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+	    transform: translate3d(0, 0, 0) rotate(0deg);
+    }
+	50%{ 
+		-moz-transform: translate3d(0, 5px, 0) rotate(6deg);
+	    -ms-transform: translate3d(0, 5px, 0) rotate(6deg);
+	    -webkit-transform: translate3d(0, 5px, 0) rotate(6deg);
+	    transform: translate3d(0, 5px, 0) rotate(6deg);
+	}
+	100%{
+		-moz-transform: translate3d(0, 0, 0) rotate(0deg);
+	    -ms-transform: translate3d(0, 0, 0) rotate(0deg);
+	    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+	    transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+}
+@keyframes move{
+	0%{ 
+		-moz-transform: translate3d(-15px, 0, 0);
+	    -ms-transform: translate3d(-15px, 0, 0);
+	    -webkit-transform: translate3d(-15px, 0, 0);
+	    transform: translate3d(-15px, 0, 0);
+    }
+	100%{
+		-moz-transform: translate3d(15px, 0, 0);
+	    -ms-transform: translate3d(15px, 0, 0);
+	    -webkit-transform: translate3d(15px, 0, 0);
+	    transform: translate3d(15px, 0, 0);
+	}
+}
+
+.main #wave{
+	display: block;
+	position: relative;
+	z-index: 5;
+}
+.main .safe,.main .address{
+	padding: 0 35px;
+	display: none;
+}
+.main .safe .form div,.main .address .row{
+	margin: 20px 0;
+}
+.main .safe .form input,.main .address input{
+	display: block;
+	width: 80%;
+	height: 30px;
+}
+.main .safe .changePw,.main .address .append{
+	display: block;
+	margin-top: 10px;
+	border: 0;
+	width: 150px;
+	height: 35px;
+	background: #52B0FF;
+}
+.main .safe .error,.main .address .error{
+	color: red;
+	visibility: hidden;
+}
+.main .modal-body{
+	padding: 0;
+}
+/*收货信息*/
+.person-info{
+	border: 1px solid #f5f5f5;
+	margin-top: 30px;
+    margin-bottom: 40px;
+}
+.main .order-header{
+	height: 40px;
+	line-height: 40px;
+ 	background-color: #f5f5f5;
+ 	padding: 0 30px;
+}
+.main .order-header p{
+	color: #7b7b7b;
+}
+
+.main .order-body{
+	padding: 20px 30px;
+}
+.main .order-body li{
+	padding: 5px 20px;
+	border-radius: 3px;
+}
+.main .order-body .del{
+	float: right;
+	cursor: pointer;
+}
+
+.fix a{
+	width: 40px;
+}
+
+/*footer*/
+.footer{
+	min-width: 0;
+    background: #120A0A;
+}
+.footer .container div{
+    float:left;
+    text-align: center;
+    color:white;
+}
+.botList ul li{
+	line-height: 75px;
+	float: left;
+	text-align: center;
+	padding: 0 3%;
+}

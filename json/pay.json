@@ -1,0 +1,38 @@
+{
+	"g1": [
+	  {
+	    "img": "<img src='img/goods1/150.jpg' />",
+	    "product": "<a href='goods1.html'>冒险岛2 绿水灵鼠标垫</a>",
+	    "info":"<p>鼠标垫(还剩10件)</p>",
+	    "price": "29.00",
+	    "remain": "10"
+	  }
+	],
+	"g2": [
+	  {
+	    "img": "<img src='img/3songshu/150.jpg' />",
+	    "product": "<a href='3songshu.html'>三只松鼠 夏威夷果</a>",
+	    "info":"<p>奶油味(还剩35件)</p>",
+	    "price": "48.90",
+	    "remain": "35"
+	  }
+	],
+	"g3":[
+		{
+			"img": "<img src='img/product/small1.jpg' />",
+		    "product": "<a href='product.html#/CET'>星火英语 大学英语四级</a>",
+		    "info":"<p>2016年12月全真试题(还剩86件)</p>",
+		    "price": "37.40",
+		    "remain": "86"
+		} 
+	],
+	"g4":[
+		{
+			"img": "<img src='img/product/1small1.jpg' />",
+		    "product": "<a href='product.html#/Guliduo'>伊利 谷粒多颗粒燕麦牛奶200mL*12盒</a>",
+		    "info":"<p>谷粒多-燕麦(还剩56件)</p>",
+		    "price": "36.00",
+		    "remain": "56"
+		} 
+	]
+}
